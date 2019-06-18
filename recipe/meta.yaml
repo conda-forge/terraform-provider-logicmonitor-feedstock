@@ -1,13 +1,13 @@
 {% set provider = "LogicMonitor" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "1.2.0" %}
+{% set version = "1.2.1" %}
 
 {% set name = goname.split('/')[-1] %}
 {% set pkg_src = ('src/'+goname).replace("/",os.sep) %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" + (".exe" if win else "")%}
 
-{% set sha256 = "96ab9fca4af13534382c7b4ad2fe3bfe209de3c253db752f0252a7f12b606209" %}
+{% set sha256 = "fb19f6a4a8aff449a0bf80f5197568325c505fd47391a93b3ebb2e1ef477eecb" %}
 
 package:
   name: {{ name|lower }}
@@ -20,7 +20,7 @@ source:
 
 
 build:
-  number: 1001
+  number: 0
   script:
     - pushd {{ pkg_src }}
     - go build -v -o $GOBIN/{{ x4_plugin }} .  # [unix]
