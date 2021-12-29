@@ -73,6 +73,7 @@ Installing `terraform-provider-logicmonitor` from the `conda-forge` channel can 
 
 ```
 conda config --add channels conda-forge
+conda config --set channel_priority strict
 ```
 
 Once the `conda-forge` channel has been enabled, `terraform-provider-logicmonitor` can be installed with:
@@ -91,7 +92,8 @@ conda search terraform-provider-logicmonitor --channel conda-forge
 About conda-forge
 =================
 
-[![Powered by NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](http://numfocus.org)
+[![Powered by
+NumFOCUS](https://img.shields.io/badge/powered%20by-NumFOCUS-orange.svg?style=flat&colorA=E1523D&colorB=007D8A)](https://numfocus.org)
 
 conda-forge is a community-led conda channel of installable packages.
 In order to provide high-quality builds, the process has been automated into the
@@ -152,4 +154,5 @@ Feedstock Maintainers
 =====================
 
 * [@conda-forge/terraform](https://github.com/conda-forge/terraform/)
+* [@mxr-conda](https://github.com/mxr-conda/)
 
