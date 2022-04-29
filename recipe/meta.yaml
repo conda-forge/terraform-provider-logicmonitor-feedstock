@@ -1,12 +1,12 @@
 {% set provider = "LogicMonitor" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "2.0.0" %}
+{% set version = "2.0.1" %}
 
 {% set name = goname.split('/')[-1] %}
 
 {% set x4_plugin = name + '_v' + version + "_x4" %}
 
-{% set sha256 = "a73648690c19f41cefe323ad1266db65345f7bd39c820e78008e043019d574be" %}
+{% set sha256 = "761f0fcbca60a159f7f5b7cc5a385107336bb5934efc03cbc96717fe2d8bb561" %}
 
 package:
   name: {{ name|lower }}
