@@ -1,6 +1,6 @@
 {% set provider = "LogicMonitor" %}
 {% set goname = "github.com/terraform-providers/terraform-provider-"+provider.lower() %}
-{% set version = "2.1.1" %}
+{% set version = "2.1.2" %}
 
 {% set name = goname.split('/')[-1] %}
 
@@ -13,7 +13,7 @@ package:
 
 source:
   url: https://{{ goname }}/archive/v{{ version }}.tar.gz
-  sha256: "77c0b51389258766ad61650d8e9f69ff234751bcc76d4e54cf9114c31446a25e"
+  sha256: "6ba4860c910b824ad29f19093dc13480a161ce5f09eeec4ab0dccd769af33938"
 
 
 build:
